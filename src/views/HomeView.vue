@@ -4,6 +4,15 @@
       <h1>Questa è la HOME</h1>
 
     </v-row>
+    <br/>
+    <br/>
+    <v-row justify="center">
+      <v-btn
+          @click="goToAbout"
+          color="primary"
+          elevation="2"
+      >VAI A ABOUT</v-btn>
+    </v-row>
   </v-container>
 </template>
 
@@ -11,5 +20,10 @@
 
 export default {
   name: 'HomeView',
+  methods: {
+    goToAbout: function () {
+      this.$router.push('/about/111')
+    }
+  }
 }
 </script>
