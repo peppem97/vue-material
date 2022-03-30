@@ -1,16 +1,16 @@
 <template>
-  <div class="container">
-    <div class="row justify-content-center">
+  <v-container>
+    <v-row justify="center">
       <nav>
         <router-link to="/home">Home</router-link> |
         <router-link to="/about">About</router-link>
       </nav>
-    </div>
+    </v-row>
     <br/>
-    <div class="row justify-content-center">
+    <v-row>
       <router-view/>
-    </div>
-  </div>
+    </v-row>
+  </v-container>
 
 </template>
 

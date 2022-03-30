@@ -1,19 +1,10 @@
 <template>
-  <div class="home">
-    <div class="container">
-      <div class="row justify-content-center">
-        <h1 class="text-center">This is an home page</h1>
-      </div>
-      <br/>
-      <div class="row justify-content-center">
-        <v-btn
-            color="primary"
-            elevation="2"
-        >PREMERE</v-btn>
-      </div>
-    </div>
+  <v-container>
+    <v-row justify="center">
+      <h1>Questa è la HOME</h1>
 
-  </div>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
