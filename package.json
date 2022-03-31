@@ -8,7 +8,8 @@
     "lint": "vue-cli-service lint",
     "routing": "npx --package @vue/cli vue add router",
     "vuetify": "npx --package @vue/cli vue add vuetify",
-    "bootstrap": "npm install --save @popperjs/core bootstrap"
+    "bootstrap": "npm install --save @popperjs/core bootstrap",
+    "vuex": "npm install vuex@4 --save"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
@@ -19,6 +20,7 @@
     "vue": "^3.2.13",
     "vue-router": "^4.0.14",
     "vuetify": "^3.0.0-beta.0",
+    "vuex": "^4.0.2",
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {

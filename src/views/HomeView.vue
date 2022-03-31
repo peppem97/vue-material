@@ -5,6 +5,14 @@
 
     </v-row>
     <br/>
+    <v-row justify="center">
+      <h1>Hello, my name is {{$store.state.user.name}}</h1>
+
+    </v-row>
+    <br/>
+    <v-row justify="center">
+      <p>{{$store.getters.postsCount}} posts available</p>
+    </v-row>
     <br/>
     <v-row justify="center">
       <v-btn

@@ -4,6 +4,11 @@
       <h1>Questa è ABOUT</h1>
       <h2>{{ this.$route.params.id }} </h2>
     </v-row>
+    <br/>
+    <v-row justify="center">
+      <input type="text" v-model="post" />
+      <button @click="savePost">Save</button>
+    </v-row>
   </v-container>
 </template>
 
@@ -11,5 +16,10 @@
 
 export default {
   name: 'AboutView',
+  methods:{
+    savePost(){
+      this.$store.dispatch('insertPost', this.post)
+    }
+  }
 }
 </script>
