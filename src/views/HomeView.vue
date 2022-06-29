@@ -2,12 +2,10 @@
   <v-container>
     <v-row justify="center">
       <h1>Questa è la HOME</h1>
-
     </v-row>
     <br/>
     <v-row justify="center">
       <h1>Hello, my name is {{$store.state.user.name}}</h1>
-
     </v-row>
     <br/>
     <v-row justify="center">
@@ -16,10 +14,32 @@
     <br/>
     <v-row justify="center">
       <v-btn
-          @click="goToAbout"
+      color="primary"
+      elevation="2"
+      rounded
+      @click="goToAbout"
+      >PREMI</v-btn>
+    </v-row>
+    <br/>
+    <br/>
+    <v-row justify="center">
+      <v-btn
           color="primary"
           elevation="2"
-      >VAI A ABOUT</v-btn>
+          rounded
+          @click="goToExample"
+      >VAI A ESEMPIO</v-btn>
+    </v-row>
+    <br/>
+    <br/>
+    <br/>
+    <v-row justify="center">
+      <v-text-field
+          label="Outlined"
+          placeholder="Placeholder"
+          clearable
+          variant="outlined"
+      ></v-text-field>
     </v-row>
   </v-container>
 </template>
@@ -31,6 +51,9 @@ export default {
   methods: {
     goToAbout: function () {
       this.$router.push('/about/111')
+    },
+    goToExample: function () {
+      this.$router.push('/example')
     }
   }
 }

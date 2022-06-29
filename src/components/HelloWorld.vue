@@ -3,9 +3,10 @@
     <br/>
     <v-row justify="center">
       <v-btn
-          color="primary"
-          elevation="12"
-      >PREMI QUI</v-btn>
+      color="accent"
+      elevation="2"
+      rounded
+      >PREMI</v-btn>
     </v-row>
   </v-container>
 </template>
